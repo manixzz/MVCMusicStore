@@ -1,0 +1,18 @@
+﻿@model MvcMusicStore.Models.Genre
+@{
+    ViewBag.Title = "Browse Artists in Genre";
+}
+
+<div class="genre">
+    <h3><em>@Model.Name</em> Artists</h3>
+
+    <ul id="artist-list">
+        @foreach (var artist in Model.Albums) 
+        { 
+            <li>
+                @artist.Artist.Name
+            </li>
+        }
+
+    </ul>
+</div>

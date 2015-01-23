@@ -1,0 +1,29 @@
+﻿@model MvcMusicStore.Models.Artist
+
+@{
+    ViewBag.Title = "Artist - " + Model.Name;
+}
+
+<h2>@Model.Name</h2>
+
+<div id="artist-details">
+    <p>
+        <em>Name: </em>
+        @Model.Name
+    </p>
+
+    <p>
+        <em>Number of Albums: </em>
+        @Model.NumberOfAlbums
+
+    </p>
+
+    <p>
+        <em>Genre: </em>
+        @Model.ListOfGenres.First().Name
+        @foreach (var genre in Model.ListOfGenres.Skip(1)) { 
+            @:, @genre.Name
+        }
+    </p>
+
+</div>

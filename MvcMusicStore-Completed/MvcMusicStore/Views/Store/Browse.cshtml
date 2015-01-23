@@ -1,0 +1,36 @@
+﻿@model MvcMusicStore.Models.Genre
+ 
+@{
+    ViewBag.Title = "Browse Albums";
+}
+ 
+<div id="genre">
+    <h3><em>@Model.Name</em> Albums</h3>
+ 
+    <ul id="album-list">
+        @foreach (var album in Model.Albums)
+        {
+            <li>
+                <a href="@Url.Action("Details", new { id = album.AlbumId })">
+                    <img alt="@album.Title" src="@album.AlbumArtUrl" />
+                    <span>@album.Title</span>
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+
+<div id="artist">
+    <h3><em>@Model.Name</em> Artists</h3>
+ 
+    <ul id="artist-list">
+        @foreach (var artist in ViewData["artists"] as List<MvcMusicStore.Models.Artist>)
+        {
+            <li>
+                <a href="@Url.Action("ArtistDetails", "Store", new { id = artist.ArtistId })">
+                    <span>@artist.Name</span>
+                </a>
+            </li>
+        }
+    </ul>
+</div>

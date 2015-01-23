@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/MvcMusicStore" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Admin\\Documents\\MvcMusicStore\\MvcMusicStore-v3\.0\\MvcMusicStore-Completed\\MvcMusicStore\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Admin\\Documents\\MvcMusicStore\\MvcMusicStore-v3\.0\\MvcMusicStore-Completed\\MvcMusicStore\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="LocalSqlServer-Web.config Connection String" description="LocalSqlServer Connection String used in web.config by the application to access the database." value="Data Source=ADMIN-LT;Integrated Security=SSPI;Initial Catalog=ASPNETDB;User=IIS APPPOOL\MvcMusicStore;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Admin\\Documents\\MvcMusicStore\\MvcMusicStore-v3\.0\\MvcMusicStore-Completed\\MvcMusicStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LocalSqlServer']/@connectionString" />
+  </parameter>
+  <parameter name="MusicStoreEntities-Web.config Connection String" description="MusicStoreEntities Connection String used in web.config by the application to access the database." value="Data Source=|DataDirectory|MvcMusicStore.sdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Admin\\Documents\\MvcMusicStore\\MvcMusicStore-v3\.0\\MvcMusicStore-Completed\\MvcMusicStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MusicStoreEntities']/@connectionString" />
+  </parameter>
+</parameters>

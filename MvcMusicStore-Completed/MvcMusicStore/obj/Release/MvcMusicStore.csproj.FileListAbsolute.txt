@@ -1,0 +1,14 @@
+C:\Users\Admin\Documents\GitHub\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\bin\MvcMusicStore.dll
+C:\Users\Admin\Documents\GitHub\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\bin\MvcMusicStore.pdb
+C:\Users\Admin\Documents\GitHub\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\bin\EntityFramework.dll
+C:\Users\Admin\Documents\GitHub\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\bin\EntityFramework.xml
+C:\Users\Admin\Documents\GitHub\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\obj\Release\MvcMusicStore.dll
+C:\Users\Admin\Documents\GitHub\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\obj\Release\MvcMusicStore.pdb
+C:\Users\Admin\Documents\GitHub\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\obj\Release\MvcMusicStore.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\bin\MvcMusicStore.dll
+C:\Users\Admin\Documents\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\bin\MvcMusicStore.pdb
+C:\Users\Admin\Documents\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\bin\EntityFramework.dll
+C:\Users\Admin\Documents\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\bin\EntityFramework.xml
+C:\Users\Admin\Documents\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\obj\Release\MvcMusicStore.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\obj\Release\MvcMusicStore.dll
+C:\Users\Admin\Documents\MvcMusicStore\MvcMusicStore-v3.0\MvcMusicStore-Completed\MvcMusicStore\obj\Release\MvcMusicStore.pdb
