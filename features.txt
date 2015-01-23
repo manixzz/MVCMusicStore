@@ -1,0 +1,71 @@
+Feature #1: Display Artists in a Genre
+
+Where to find on site:
+Select the store link. A list of genres will appear as well as the top 5 artists with the most number of albums. Select a genre and both the albums belonging to that genre and artists belonging to that genre will be shown. Note that duplicate artists will not be shown. Select an artist from that list and their artist details will be shown, (name, total albums, list of genres).
+
+Where to find in code:
+- Models/Artist.cs
+- Controllers/StoreController.cs
+- Views/Store/ArtistDetails.cshtml
+- Views/Store/Index.cshtml
+- Views/Store/Browse.cshtml
+
+
+
+Feature #2: Extend the user registration to save the user profile to the database
+
+Where to find on site:
+Navigate to a registration page, (ex. Cart -> Checkout -> Register for an account). The registration page will now incorporate additional fields to gather user profile information. Each field is required. Once, both the profile information and the account information, is provided and validated, an account should be registered. 
+
+Where to find in code:
+- Models/AccountModels.cs (RegisterModel) 
+- Controllers/AccountController.cs (Register)
+- Views/Account/Register.cshtml
+
+Additional Details:
+Used the profile provider, to store profile information in the profile table in the aspnetdb database. Profile information is only stored once the account has been successfully created. Validation of profile information is based on the same validation requirements used in the order model. (i.e. the string length values chosen are the same as the values used in the Order model. )
+
+
+
+Feature #3: Add convenient URL
+
+Where to find on site:
+Navigate to https://localhost/MvcMusicStore/Store/{choice of genre}. ex.https://localhost/MvcMusicStore/Store/Rock
+
+Where to find in code: 
+- Global.asax
+
+Additional details:
+Registered a new route that looked for the Store/{genre} and added it before the default route. This simplifies the URL when trying to view albums/artists in a genre.
+
+
+
+Feature #4: Add the user name to the application
+
+Where to find on site:
+After logging into the website, the top right corner should display your username in every page that you visit. This continues until you log out of your account.
+
+Where to find in code: 
+- Views/Shared/_Layout.cshtml
+- Controllers/AccountController.cs (DisplayUsername)
+- Views/Account/DisplayUsername.cshtml
+
+Additional Details:
+Check User.Identity.Name to figure out if you are logged in or not. If you are, display username in the navigation list. If not, display link to log on, (see further features for why).
+
+
+
+Further features: 
+
+Where to find on site: 
+Several places
+
+Where to find in code: 
+Several places
+
+Additional Details:
+
+- Improved the site by merging the artists in a genre page with the existing store page.
+- Added the ability to login or logout from your account on any page in the site. Previously, you have to checkout or go to the Admin-specific link to actually log in.
+- Once a user is logged in, clicking on their username brings them to their user details page which currently shows them their previous, (if any), order details. It also provides them with a link to actually log out here.
+- Previously when registering for an account, only unique usernames were enforced, meaning if the username already existed in the database, then a new account could not be created. Now the e-mail also has to be unique, can't have more than one account in the database with the same email address. 
